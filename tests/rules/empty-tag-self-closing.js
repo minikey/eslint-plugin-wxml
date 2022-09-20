@@ -24,13 +24,15 @@ tester.run("empty-tag-self-closing", rule, {
     {
       filename: "test.wxml",
       code: `<app><div class="goodsTags" >  </app></app>`,
+      output: `<app><div class="goodsTags" /></app>`,
       errors: [`empty wxml tag must be self closing`],
     },
     {
       filename: "test.wxml",
       code: `<app><div class="goodsTags" >
-      
+
       </app></app>`,
+      output: `<app><div class="goodsTags" /></app>`,
       errors: [`empty wxml tag must be self closing`],
     },
   ],
