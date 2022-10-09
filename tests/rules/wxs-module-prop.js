@@ -2,7 +2,7 @@ const RuleTester = require("eslint").RuleTester;
 const rule = require("../../lib/rules/wxs-module-prop");
 
 const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
+  parser: require.resolve("@wd/wxml-parser"),
 });
 
 tester.run("wxs-module-prop", rule, {

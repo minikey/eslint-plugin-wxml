@@ -2,7 +2,7 @@ const RuleTester = require("eslint").RuleTester;
 const rule = require("../../lib/rules/no-inconsistent-tagname");
 
 const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
+  parser: require.resolve("@wd/wxml-parser"),
 });
 
 tester.run("no-inconsistent-tagname", rule, {

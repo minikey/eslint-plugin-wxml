@@ -2,7 +2,7 @@ const RuleTester = require("eslint").RuleTester;
 const rule = require("../../lib/rules/mustache-interpolation-spacing");
 
 const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
+  parser: require.resolve("@wd/wxml-parser"),
 });
 
 tester.run("mustache-interpolation-spacing", rule, {

@@ -2,7 +2,7 @@ const RuleTester = require("eslint").RuleTester;
 const rule = require("../../lib/rules/no-dynamic-wx-key");
 
 const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
+  parser: require.resolve("@wd/wxml-parser"),
 });
 
 tester.run("no-dynamic-wx-key", rule, {

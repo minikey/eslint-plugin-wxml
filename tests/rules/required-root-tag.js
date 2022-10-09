@@ -2,7 +2,7 @@ const RuleTester = require("eslint").RuleTester;
 const rule = require("../../lib/rules/required-root-tag");
 
 const tester = new RuleTester({
-  parser: require.resolve("@wxml/parser"),
+  parser: require.resolve("@wd/wxml-parser"),
 });
 
 tester.run("required-root-tag", rule, {
