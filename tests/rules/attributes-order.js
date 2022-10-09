@@ -27,7 +27,7 @@ tester.run("attributes-order", rule, {
       filename: "test.wxml",
       code: `<x-dialog bindbgtap="closeHandler" no-header/>`,
       output: `<x-dialog no-header bindbgtap="closeHandler"/>`,
-      errors: [`Attribute "no-header" should go before "bindbgtap"`]
-    }
+      errors: [`Attribute "no-header" should go before "bindbgtap"`],
+    },
   ],
 });

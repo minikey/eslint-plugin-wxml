@@ -31,7 +31,7 @@ tester.run("quotes", rule, {
       filename: "test.wxml",
       code: `<popup v-if="{{condition}}" />`,
       options: ["single"],
-      output: '<popup v-if=\'{{condition}}\' />',
+      output: "<popup v-if='{{condition}}' />",
       errors: [
         { messageId: "wrongQuotes", data: { description: "singlequote" } },
       ],
